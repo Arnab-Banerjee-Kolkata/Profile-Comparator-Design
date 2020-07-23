@@ -60,6 +60,7 @@ public class InterestsFragment extends Fragment implements View.OnTouchListener
 
         SCREEN_WIDTH=getActivity().getWindowManager().getDefaultDisplay().getWidth();
         SCREEN_HEIGHT=getActivity().getWindowManager().getDefaultDisplay().getHeight();
+        final float scale = getContext().getResources().getDisplayMetrics().density;
 
         GUY_INTERESTS=guyHobbyName.length;GIRL_INTERESTS=girlHobbyName.length;
         inCard=new CardView[6];
@@ -81,6 +82,11 @@ public class InterestsFragment extends Fragment implements View.OnTouchListener
         inName[5]=(TextView)view.findViewById(R.id.inName6);
 
         cover=(RelativeLayout)view.findViewById(R.id.cover);
+
+        RelativeLayout.LayoutParams coverParam = new RelativeLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, (int)(SCREEN_HEIGHT/2));
+        cover.setLayoutParams(coverParam);
+
         cover.setElevation(35);
 
         inCard[2].setOnTouchListener(this);
