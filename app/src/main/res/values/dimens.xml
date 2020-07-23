@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="swipeBarHeight">40dp</dimen>
+    <dimen name="interestsCardHeight">200dp</dimen>
+    <dimen name="interestsCardWidth">175dp</dimen>
+    <dimen name="interestsImgVertical">40dp</dimen>
+    <dimen name="interestsImgHorizontal">40dp</dimen>
+</resources>

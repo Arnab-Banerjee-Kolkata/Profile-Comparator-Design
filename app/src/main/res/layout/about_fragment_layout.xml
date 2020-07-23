@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:id="@+id/guyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="85dp"
+        android:text="MICHAEL PHILLIPHS"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/guyAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/guyName"
+        android:layout_below="@+id/guyName"
+        android:text="27 Years"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="24dp"
+        android:layout_height="26dp"
+        android:layout_alignStart="@+id/guyName"
+        android:layout_below="@+id/guyAge"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grad" />
+
+    <TextView
+        android:id="@+id/guyEdu"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/guyAge"
+        android:layout_toEndOf="@+id/icon1"
+        android:text="Bachelors in Science"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/guyName"
+        android:layout_below="@+id/icon1"
+        android:scaleType="fitCenter"
+        android:src="@drawable/location" />
+
+    <TextView
+        android:id="@+id/guyPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/icon1"
+        android:layout_toEndOf="@+id/icon1"
+        android:text="Pune" />
+
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/icon1"
+        android:layout_toEndOf="@+id/guyAge"
+        android:scaleType="fitCenter"
+        android:src="@drawable/briefcase" />
+
+    <TextView
+        android:id="@+id/guyProf"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/icon1"
+        android:layout_toEndOf="@+id/icon3"
+        android:text="Director" />
+
+    <TextView
+        android:id="@+id/guyHobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/guyName"
+        android:layout_below="@+id/icon2"
+        android:text="Football, Gaming, Reading" />
+
+    <TextView
+        android:id="@+id/girlName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="135dp"
+        android:text="EVA SHERMAN"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/girlAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/girlName"
+        android:layout_marginTop="-135dp"
+        android:layout_marginStart="10dp"
+        android:text="25 Years"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/girlEdu"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/girlAge"
+        android:layout_toRightOf= "@+id/icon4"
+        android:text="B.Com, MBA" />
+
+    <ImageView
+        android:id="@+id/icon4"
+        android:layout_width="24dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/girlAge"
+        android:layout_marginStart="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grad" />
+
+    <TextView
+        android:id="@+id/girlProf"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/girlEdu"
+        android:layout_toRightOf="@+id/icon5"
+        android:layout_centerHorizontal="true"
+        android:text="Manager" />
+
+    <ImageView
+        android:id="@+id/icon5"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/girlEdu"
+        android:layout_marginStart="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/briefcase"
+        android:layout_toRightOf="@+id/girlPlace"/>
+
+    <TextView
+        android:id="@+id/girlPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/girlEdu"
+        android:layout_toRightOf="@+id/icon6"
+        android:text="Mumbai" />
+
+    <ImageView
+        android:id="@+id/icon6"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/girlEdu"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/location" />
+
+    <TextView
+        android:id="@+id/girlHobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/girlProf"
+        android:text="Dancing, Reading, Singing" />
+
+
+
+
+</RelativeLayout>

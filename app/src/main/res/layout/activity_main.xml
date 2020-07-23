@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/matchScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/screenSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="@dimen/swipeBarHeight"
+            android:background="@drawable/guy_image_design"
+            android:elevation="5dp" />
+
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/guyDp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="@dimen/swipeBarHeight"
+            android:elevation="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/guy_image"
+            app:siShape="@drawable/guy_image_design"
+            app:siSquare="true" />
+
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/girl_image_design"
+            android:elevation="5dp" />
+
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/girDp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:elevation="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/girl_image"
+            app:siShape="@drawable/girl_image_design"
+            app:siSquare="false" />
+
+        <RelativeLayout
+            android:id="@+id/upSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/darker_gray">
+
+            <ImageView
+                android:id="@+id/upSwipeImg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/swipeBarHeight"
+                android:src="@drawable/swipe_up" />
+
+            <ImageView
+                android:id="@+id/downSwipeImg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/swipeBarHeight"
+                android:src="@drawable/swipe_down" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/tabScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scrollbars="none">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tabText1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="ABOUT"
+                android:textSize="20dp"
+                android:background="@color/purple"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:padding="10dp"/>
+                <RelativeLayout
+                    android:id="@+id/tabCol1"
+                    android:layout_width="150dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@color/purple"
+                    android:layout_below="@id/tabText1"/>
+
+                <TextView
+                    android:id="@+id/tabText2"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="INTERESTS"
+                    android:textSize="20dp"
+                    android:background="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_toEndOf="@+id/tabText1"/>
+                <RelativeLayout
+                    android:id="@+id/tabCol2"
+                    android:layout_width="150dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@color/purple"
+                    android:layout_below="@id/tabText2"
+                    android:layout_toEndOf="@+id/tabCol1"/>
+
+                <TextView
+                    android:id="@+id/tabText3"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="PREFERENCES"
+                    android:textSize="20dp"
+                    android:background="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_toEndOf="@+id/tabText2"/>
+                <RelativeLayout
+                    android:id="@+id/tabCol3"
+                    android:layout_width="150dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@color/purple"
+                    android:layout_below="@id/tabText3"
+                    android:layout_toEndOf="@+id/tabCol2"/>
+
+                <TextView
+                    android:id="@+id/tabText4"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="ABOUT"
+                    android:textSize="20dp"
+                    android:background="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_toEndOf="@+id/tabText3"/>
+                <RelativeLayout
+                    android:id="@+id/tabCol4"
+                    android:layout_width="150dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@color/purple"
+                    android:layout_below="@id/tabText4"
+                    android:layout_toEndOf="@+id/tabCol3"/>
+
+                <TextView
+                    android:id="@+id/tabText5"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="INTERESTS"
+                    android:textSize="20dp"
+                    android:background="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_toEndOf="@+id/tabText4"/>
+                <RelativeLayout
+                    android:id="@+id/tabCol5"
+                    android:layout_width="150dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@color/purple"
+                    android:layout_below="@id/tabText5"
+                    android:layout_toEndOf="@+id/tabCol4"/>
+
+                <TextView
+                    android:id="@+id/tabText6"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="PREFERENCES"
+                    android:textSize="20dp"
+                    android:background="@color/purple"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_toEndOf="@+id/tabText5"/>
+                <RelativeLayout
+                    android:id="@+id/tabCol6"
+                    android:layout_width="150dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:background="@color/purple"
+                    android:layout_below="@id/tabText6"
+                    android:layout_toEndOf="@+id/tabCol5"/>
+
+
+            </RelativeLayout>
+
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
