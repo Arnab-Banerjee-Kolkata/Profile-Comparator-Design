@@ -24,3 +24,7 @@ UI design for profile comparison and matching.
 
 </tr>
 </table>
+
+# Demonstration Video
+
+![](https://github.com/Arnab-Banerjee-Kolkata/Profile-Comparator-Design/blob/master/SampleVideo/sampleVideo.gif)
